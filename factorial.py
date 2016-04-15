@@ -7,9 +7,7 @@
 # Computes the factorial of n
 # Returns the factorial of n
 def recursive_factorial(n):
-	if n == 0:
-		return 0
-	elif n == 1:
+	if n < 2:
 		return 1
 	else:
 		return n * recursive_factorial(n - 1)

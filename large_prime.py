@@ -20,11 +20,14 @@ def get_algorithm_result(args):
 	return largest
 
 def prime_number(num):
-	return all( num % x for x in range(2, num))
+	if num == 1:
+		return False
+	else:
+		return all( num % x for x in range(2, num))
 	
 def main():
-	print prime_number(4)
-	print prime_number(5)
+	print prime_number(1)
+	print "78", prime_number(78)
 	print get_algorithm_result([1,2,3,4,12,34,1,2,3,56,23,89,2,3,5,6,7,8])
 
 if __name__ == '__main__':
