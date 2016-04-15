@@ -1,0 +1,22 @@
+
+# Create both a recursive function called recursive_factorial 
+# and iterative function called iterative_factorial that does the 
+# following
+
+# Accepts as parameter an Integer n
+# Computes the factorial of n
+# Returns the factorial of n
+def recursive_factorial(n):
+	pass
+
+def iterative_factorial(n):
+	factorial = 1
+	for x in range(1, n + 1):
+		factorial *= x
+	return factorial
+
+def main():
+	print iterative_factorial(4)
+
+if __name__ == '__main__':
+	main()
