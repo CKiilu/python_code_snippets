@@ -7,7 +7,12 @@
 # Computes the factorial of n
 # Returns the factorial of n
 def recursive_factorial(n):
-	pass
+	if n == 0:
+		return 0
+	elif n == 1:
+		return 1
+	else:
+		return n * recursive_factorial(n - 1)
 
 def iterative_factorial(n):
 	factorial = 1
@@ -17,6 +22,7 @@ def iterative_factorial(n):
 
 def main():
 	print iterative_factorial(4)
+	print recursive_factorial(4)
 
 if __name__ == '__main__':
 	main()
