@@ -11,9 +11,7 @@ def manipulate_data(data_type, data):
 		return list(reversed(data))
 	elif data_type == "set".lower():
 		data = set(data)
-		data.add("ANDELA")
-		data.add("TIA")
-		data.add("AFRICA")
+		data.update(["ANDELA", "TIA", "AFRICA"])
 		return data
 	elif data_type == "dictionary".lower():
 		return data.keys()
