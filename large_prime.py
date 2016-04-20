@@ -20,7 +20,7 @@ def get_algorithm_result(args):
 	return largest
 
 def prime_number(num):
-	if num == 1:
+	if num < 2:
 		return False
 	else:
 		return all( num % x for x in range(2, num))

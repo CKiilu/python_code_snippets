@@ -7,13 +7,13 @@
 # add items `"ANDELA"`, `"TIA"` and `"AFRICA"` to the set and return the resulting set
 # return the keys of a dictionary.
 def manipulate_data(data_type, data):
-	if data_type == "list".lower():
+	if data_type.lower() == "list":
 		return list(reversed(data))
-	elif data_type == "set".lower():
+	elif data_type.lower() == "set":
 		data = set(data)
 		data.update(["ANDELA", "TIA", "AFRICA"])
 		return data
-	elif data_type == "dictionary".lower():
+	elif data_type.lower() == "dictionary":
 		return data.keys()
 
 def main():
