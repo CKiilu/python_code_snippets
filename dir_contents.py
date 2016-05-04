@@ -1,5 +1,6 @@
+import os 
+
 def print_dir_contents(Path):
-	import os 
 	for child in os.listdir(Path):
 		child_path = os.path.join(Path, child)
 		if os.path.isdir(child_path):
@@ -8,7 +9,7 @@ def print_dir_contents(Path):
 			print (child_path)
 
 def main():
-	print_dir_contents(input("Path: "))
+	print_dir_contents(os.getcwd())
 
 if __name__ == '__main__':
 	main()
