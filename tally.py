@@ -4,10 +4,9 @@
 
 import csv
 
-def tally():
-	reader = csv.reader(open('tally.csv'))
-	# length = range(reader)
-	# print length
+def tally(filename=None):
+	print (filename)
+	reader = csv.reader(open(filename if filename != '.csv' and filename != None else 'tally.csv'))
 	keys = [key for key in next(reader)]
 	print (keys)
 
@@ -18,7 +17,7 @@ def tally():
 
 	for row in  reader:
 		for key in dict_values:
-			dict_values[key] += int(row[key.index(key)])
+			dict_values[key] += int(row[keys.index(key)])
 
 	print (dict_values)
 
