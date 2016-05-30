@@ -19,8 +19,8 @@ def iterative_factorial(n):
 	return factorial
 
 def main():
-	print iterative_factorial(4)
-	print recursive_factorial(4)
+	print iterative_factorial(0)
+	print recursive_factorial(0)
 
 if __name__ == '__main__':
 	main()
