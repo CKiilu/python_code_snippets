@@ -1,0 +1,4 @@
+<tag1 name="HEYA">
+<tag2 value="DEAR" name="GIRL">
+</tag2>
+</tag1>
