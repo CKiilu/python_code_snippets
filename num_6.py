@@ -1,7 +1,6 @@
 def main():
 	with open('num_6.txt', 'r') as f:
 		first = f.next()
-		count = 1
 		for line in f:
 			line = int(line.replace('\n', ''))
 			iter_num = list(str(line))
